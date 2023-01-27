@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!--header-->
+  <header class="py-4 shadow-sm bg-white">
+    <div class="flex item-center  justify-between ">
+      <!--logo-->
+      <a href="#" class="block w-32">
+        <img src="logo.svg" class="w-full ml-3 h-20 item-center">
+      </a>
+      <!--searchbar-->
+      <div class="w-full max-w-xl relative flex">
+        <span class="absolute mx-4 my-6 text-lg text-grey-400 ">
+          <i class="fas fa-search"></i>
+        </span>
+        <input type="text" class="w-full border border-red-400 text-black -border-r-0 pl-12 py-1 pr-2 rounded-l-md focus:outline-none focus:ring-red-400 focus:border-red-400" placeholder="search">
+        <button type="submit" class="bg-red-400 border border-red-400 text-white px-8 rounded-r-ml hover:bg-transparent hover:text-red-400 transition ">Search
+
+        </button>
+      </div>
+
+      <!--icons-->
+      <div class="space-x-3 flex items-center px-3 ">
+        <a href="wishlist.html" class="block text-center text-gray-700 relative hover:text-red-400 transition ">
+           <span class="absolute -right-5 -top-1 w-5 h-6  rounded-full flex items-center justify-center bg-primary text-white text-xs">5</span>
+          <div class="text-2xl">
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="text-xs leading-3">WishList</div>
+        </a>
+
+        <a href="cart.html" class="block text-center text-gray-700 hover:text-red-400 transition relative">
+          <span class="absolute -right-3 top-0 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs hover:text-red-600">5</span>
+          <div class="text-2xl">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <div class="text-xs leading-3">Cart</div>
+        </a>
+        <a href="Account.html" class="block text-center text-gray-700 hover:text-red-400 transition relative">
+          <div class="text-2xl">
+            <i class="far fa-user"></i>
+          </div>
+          <div class="text-xs leading-3">Account</div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!--end header-->
+  
+  <!-- breadcrum -->
+    <div class="py-4 container ml-4 flex gap-3 items-center">
+        <a href="index2.html" class="text-red-400 text-base">
+            <i class="fas fa-home"class="bg-red-400"></i>
+        </a>
+        <span class="text-sm text-gray-400"><i class="fas fa-chevron-right"></i></span>
+        <a href="shop.html" class="text-primary text-base font-medium uppercase">
+            Shop
+        </a>
+        <span class="text-sm text-gray-400"><i class="fas fa-chevron-right"></i></span>
+        <p class="text-gray-600 font-medium uppercase">My account</p>
+    </div>
+    <!-- breadcrum end -->
+    
+    <!--Account wrapper-->
+    <div class="container grid grid-cols-12 gap-6 pt-4 pb-16 item-start">
+      <div class="col-span-3">
+      <div class="px-4 py-3 shadow flex item-center">
+        <div class="flex-shrink-0">
+          <img src="profile.jpg" class="rounded-full w-14 h-14 border border-gray-200 object-corner">
+        </div>
+        <div> 
+        <p class="text-gray-900 font-bold">Hello,</p>
+        <h4 class="text-gray-600 font-medium">John Joseph</h4>
+        </div>
+        
+      </div>
+      <div class="mt-6 bg-white shadow rounded p-4 divode-y divide-gray-200 space-y-4 text-gray-600">
+        <div class="space-y-1 pl-8 pt-4">
+          <a href="#" class="relative text-red-400 block font-medium capitalize">Manage account
+            <span class="absolute-left-8 top-0 text-base">
+              <i class="far fa-address-card"></i></span></a>
+        </div>
+      </div>
+      </div>
+    </div>
+        <!--Account wrapper end-->
+</body>
+
+</html>

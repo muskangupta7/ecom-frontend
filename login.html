@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!--header-->
+  <header class="py-4 shadow-sm bg-white">
+    <div class="flex item-center  justify-between ">
+      <!--logo-->
+      <a href="#" class="block w-32">
+        <img src="logo.svg" class="w-full ml-3 h-20 item-center">
+      </a>
+      <!--searchbar-->
+      <div class="w-full max-w-xl relative flex">
+        <span class="absolute mx-4 my-6 text-lg text-grey-400 ">
+          <i class="fas fa-search"></i>
+        </span>
+        <input type="text" class="w-full border border-red-400 text-black -border-r-0 pl-12 py-1 pr-2 rounded-l-md focus:outline-none focus:ring-red-400 focus:border-red-400" placeholder="search">
+        <button type="submit" class="bg-red-400 border border-red-400 text-white px-8 rounded-r-ml hover:bg-transparent hover:text-red-400 transition ">Search
+
+        </button>
+      </div>
+
+      <!--icons-->
+      <div class="space-x-3 flex items-center px-3 ">
+        <a href="wishlist.html" class="block text-center text-gray-700 relative hover:text-red-400 transition ">
+          <!-- <span class="absolute -right-5 -top-1 w-5 h-6  rounded-full flex items-center justify-center bg-primary text-white text-xs">5</span>-->
+          <div class="text-2xl">
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="text-xs leading-3">WishList</div>
+        </a>
+
+        <a href="cart.html" class="block text-center text-gray-700 hover:text-red-400 transition relative">
+          <span class="absolute -right-3 top-0 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs hover:text-red-600">5</span>
+          <div class="text-2xl">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <div class="text-xs leading-3">Cart</div>
+        </a>
+        <a href="Account.html" class="block text-center text-gray-700 hover:text-red-400 transition relative">
+          <div class="text-2xl">
+            <i class="far fa-user"></i>
+          </div>
+          <div class="text-xs leading-3">Account</div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!--end header-->
+    <!--nav bar-->
+    <nav class="bg-gray-800 item-center">
+      <div class=" container flex item-center">
+        <!--all categories-->
+        <div class="px-8 py-4 bg-red-400 flex item-center cursor-pointer">
+          <span class="text-white">
+            <i class="fas fa-bars"></i>
+            <span>
+              <span class="capitalize ml-2 text-white relative group">All Categories
+              </span>
+              <div class="absolute  mt-2 left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-3  dashed hidden">
+                <a href="#" class="flex item-center px-6 hover:bg-gray-100">
+                  <img src="sofa.svg" class="w-5 h-5 object-contain">
+                  <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                </a>
+                <a href="#" class="flex item-center px-6 hover:bg-gray-100">
+                  <img src="restaurant.svg" class="w-5 h-5 object-certain">
+                  <span class="ml-6 text-gray-600 text-sm">dinning</span>
+                </a>
+                <a href="#" class="flex item-center px-6 hover:bg-gray-100">
+                  <img src="office.svg" class="w-5 h-5 object-certain">
+                  <span class="ml-6 text-gray-600 text-sm">Office</span>
+                </a>
+                <a href="#" class="flex item-center px-6 hover:bg-gray-100">
+                  <img src="outdoor-cafe.svg" class="w-5 h-5 object-certain">
+                  <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+                </a>
+                <a href="#" class="flex item-center px-6 hover:bg-gray-100">
+                  <img src="bed-2.svg" class="w-5 h-5 object-certain">
+                  <span class="ml-6 text-gray-600 text-sm">Mattres</span>
+                </a>
+              </div>
+        </div>
+  
+        <!--nav links-->
+        <div class="w-full flex items-center justify-between text-grow pl-12">
+          <div class="text-center space-x-6 capitalize">
+            <a href="#" class="text-gray-200 hover:text-white transition">Home</a>
+            <a href="shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+            <a href="#" class="text-gray-200 hover:text-white transition">Contact us</a>
+            <a href="#" class="text-gray-200 hover:text-white transition">About us</a>
+          </div>
+          <div>
+            <a href="#" class="text-gray-200 hover:text-white transition">Login/Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!--login-->
+    <div class="container py-16">
+      <div class="max-w-lg mx-auto px-6 py-7 shadow overflow-hidden">
+        <h2 class="text-2xl uppercase font-medium mb-1">login</h2>
+        <p class="text-gray-600 mb-6 text-sm ">Login if you are a returning customer</p>
+        <form action="">
+          <div class="space-y-3">
+            <div> 
+            <label for="email" class="text-gray-600 mb-2 block">Email address
+            <input type="email" class="block w-full border border-gray-300 px-2 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-400 placeholder-gray-400" placeholder="enter your email">
+            </div>
+             <div>
+               <label for="password" class="text-gray-600 mb-2 block">Email password
+                 <input type="password" class="block w-full border border-gray-300 px-2 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-red-400 placeholder-gray-400" placeholder="enter your password">
+             </div>
+            
+          </div>
+          <div class="flex item-center justify-between mt-8">
+            <div class="flex item-center">
+              <input type="checkbox" id="agreement"class="text-red-400 focus:ring-0 rounded-sm cursor-pointer">
+              <label for="agreement" class="text-gray-600 ml-3 cursor-pointer">Remember me
+            </div>
+            <a href="#" class="text-red-400 ">Forgot password</a>
+            
+          </div>
+          <div class="mt-4">
+            <button type="submit" class="w-full py-2 text-center text-white bg-red-400 border border-red-400 rounded hover:bg-transparent hover:text-red-400 transition uppercase font-medium font-roboto ">Login
+             </div>
+      <div class="flex justify-center item-center mt-8 relative" >
+        <div class="text-gray-600 uppercase px-3 bg-white z-10 relative">or login with</div>
+      <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
+      </div>
+      <div class="flex mt-4 gap-4">
+        <a href="#" class="text-center block w-1/2 py-2 text-white bg-blue-800 rounded uppercase font-medium font-roboto hover:bg-blue-700" >Facebook</a>
+      <a href="#" class="text-center block w-1/2 py-2 text-white bg-yellow-600 rounded uppercase font-medium font-roboto hover:bg-yellow-500" >google</a>
+      </div>
+      <p class="mt-4 text-gray-600 text-center">
+        Dont have account? 
+        <a hreflang="#" class="text-red-400">Register now</a>
+        </p>
+    </div>
+        <!--login end-->
+</body>
+
+</html>
